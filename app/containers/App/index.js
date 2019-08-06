@@ -14,6 +14,7 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from 'containers/HomePage/Loadable';
 import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
+import BukuPage from 'containers/BukuPage/index';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 
@@ -45,6 +46,7 @@ export default function App() {
       </Switch>
       <Footer />
       <GlobalStyle />
+      <Route path="/book" component={BukuPage} />
     </AppWrapper>
   );
 }
